@@ -35,6 +35,10 @@ h2 {
   margin-left: auto;
 }
 
+button{
+  cursor: pointer;
+}
+
 .botao {
   background: #154580;
   color: #ffffff;
