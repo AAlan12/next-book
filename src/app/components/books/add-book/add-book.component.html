@@ -1,0 +1,57 @@
+<section class="container add-books ff-inter">
+  <header class="header">
+    <h2>Adicione um <br> Livro:</h2>
+  </header>
+  <form>
+    <label  for="books">Nome do livro</label>
+    <input type="textarea" class="input"
+           id="book" name="book"
+           placeholder="Digite o nome do livro"
+           [(ngModel)] = book.title
+           >
+
+    <label  for="author">Autor</label>
+    <input type="text" class="input"
+           id="author" name="author"
+           placeholder="Digite o nome do autor"
+           [(ngModel)]="book.author"
+           >
+    <label  for="genre">Gênero</label>
+    <input type="text" class="input"
+           id="genre" name="genre"
+           placeholder="Digite o gênero do livro:"
+           [(ngModel)]="book.genre"
+           >
+    <label  for="numberPages">Número de Páginas</label>
+    <input type="number" class="input"
+           id="numberPages" name="numberPages"
+           placeholder="Digite o número de páginas "
+           [(ngModel)]="book.numberPages"
+           >
+    <label  for="value">Valor do Livro</label>
+    <input type="number" class="input"
+           id="value" name="value"
+           placeholder="Digite o valor do livro "
+           min="0.00" max="10000.00" step="0.01"
+           [(ngModel)]="book.value"
+           >
+    <label class="imgBook__label" for="imgBook__input" tabindex="0">
+      <span class="imgBook__img">Adicione capa do livro</span>
+    </label>
+    <input type="file" accept="image/*" id="imgBook__input"/>
+
+    Previa:
+    <div class="modelo ff-roboto-mono">
+      <img class="img__prev" src="{{book.imgBook}}" alt="imagem da capa do livro">
+      <p><b>Titulo</b>: <i>{{book.title}}</i></p>
+      <p><b>Autor</b>: <i>{{book.author}}</i></p>
+      <p><b>Gênero</b>: <i>{{book.genre}}</i></p>
+      <p><b>Número de Páginas</b>: {{book.numberPages}}</p>
+      <p><b>Valor</b>: R${{book.value}}</p>
+    </div>
+    <div class="acoes">
+      <button (click)="addBook()" class="botao">Salvar</button>
+      <button (click)="cancelBook()" class="botao">Cancelar</button>
+    </div>
+  </form>
+</section>

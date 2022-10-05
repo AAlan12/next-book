@@ -1,0 +1,154 @@
+.acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.botao {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
+}
+
+.add-books {
+  padding: 2rem 0;
+}
+
+.add-books form {
+  background: #E6D2AA;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.add-books form label {
+  color: #42032C;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.add-books form .input {
+  border: none;
+  height: 40px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+
+.add-books form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+.container-radio {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+#imgBook__input{
+  display: none;
+}
+
+.imgBook__label{
+  width: 300px;
+  aspect-ratio: 5/7;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentColor;
+  cursor: pointer;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.imgBook__label:hover{
+  color: #777;
+  background: #ccc;
+}
+
+.imgBook__label:active{
+border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+.modelos {
+  display: flex;
+  gap: 2.5rem;
+  border: 1px solid red;
+}
+
+.modelo {
+  background-color: #F1EFDC;
+  padding: 0;
+  width: 70%;
+  margin: 1rem 0 2rem;
+  overflow: auto;
+}
+
+.modelo .img__prev{
+  width: 300px;
+  aspect-ratio: 5/7;
+  float: left;
+}
+
+.modelo p {
+  margin: 3rem auto;
+  word-wrap: break-word;
+}
+
+.radio {
+  margin: 0;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-modelo label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 1px solid #42032C;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: #42032C;
+}
+
+.custom-radio span {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+  border-color: #42032C;
+}
+
+input[type='radio']:checked+.custom-radio span {
+  background: #42032C;
+}

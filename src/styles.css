@@ -16,14 +16,18 @@ h1 {
 }
 
 h2 {
-  color: #154580;
+  color: #42032C;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
 }
 
 .header {
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 1rem ;
+  background: #E6D2AA;
+  border: none;
+  border-radius: 20px;
+
 }
 
 .container {
@@ -40,13 +44,13 @@ button{
 }
 
 .botao {
-  background: #154580;
+  background: #42032C;
   color: #ffffff;
   max-width: 270px;
   width: 250px;
   padding: 1rem;
   margin: 0 auto;
-  border: 2px solid #154580;
+  border: 2px solid #42032C;
   border-radius: 10px;
   transition: 0.5s ease;
 }

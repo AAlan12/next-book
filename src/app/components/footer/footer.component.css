@@ -21,6 +21,11 @@ footer {
   height: 100px;
 }
 
+.github{
+  text-decoration: none;
+  color: #42032C;
+}
+
 footer small {
   color: #42032C;;
 }
